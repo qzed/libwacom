@@ -171,6 +171,7 @@ test_vidpid(gconstpointer data)
 		case WBUSTYPE_USB:
 		case WBUSTYPE_BLUETOOTH:
 		case WBUSTYPE_I2C:
+		case WBUSTYPE_MEI:
 			g_assert_cmpint(libwacom_get_vendor_id(device), >, 0);
 			g_assert_cmpint(libwacom_get_product_id(device), >, 0);
 			break;
